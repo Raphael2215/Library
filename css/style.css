@@ -22,6 +22,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+    
+  }
+  .container-1{
+      display: flex;
+      
+      justify-content: center;
   }
   
   button {
@@ -34,12 +41,16 @@ body {
   }
   
   .table {
-    width: 1000px;
+      display: flex;
+      justify-content: center;
+      margin-left: 50px;
+      margin-right: 50px;
+    
   }
   
   table {
-    margin-left: auto;
-    margin-right: auto;
+    
+    
     background-color: #272822;
     color: #f8f8f2;
     border-spacing: 0;
@@ -68,6 +79,9 @@ body {
   .form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
   }
   
   fieldset label {
@@ -107,3 +121,32 @@ body {
   .errorText {
     color: #d5001f;
   }
+
+  .footer {
+    position: absolute;
+    
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    color: #0099d5;
+  }
+a{
+    text-decoration: none;
+    color: #0099d5;
+    
+}  
+a:hover{
+    text-decoration: underline;
+}
+#ghlogo{
+    width: 35px;
+    height: 35px;
+    margin-bottom: -9px;
+    margin-right: 10px;
+}

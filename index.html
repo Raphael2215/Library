@@ -7,6 +7,8 @@
     <title>Library</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel = "shortcut icon" href="Images/book-icon.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
@@ -14,7 +16,11 @@
         <p id="subHeading">With local storage</p>
       </header>
       <main>
-        <button class="new">Add a book</button>
+        <div class="container-1">
+            <button class="new">Add a book</button>
+        </div>
+
+        
         <div class="table">
           <table>
             <thead>
@@ -33,34 +39,37 @@
               <td>AuthorData</td>
               <td>PagesData</td>
               <td>ReadData</td>
-              <td><button>Change read status</button></td>
-              <td><button>Edit</button></td>
-              <td><button>Delete</button></td>
+              <td><button>Toggle status</button></td>
+              <td><button ><img src="Images/edit.png"></button></td>
+              <td><button><i class="fa fa-trash"></i> Trash</button></td>
             </tbody>
           </table>
         </div>
         <div class="form hidden">
-          <h2>Adding/Editing a book</h2>
+          <h2>Enter the book details</h2>
           <input type="text" id="title" placeholder="Title">
           <input type="text" id="author" placeholder="Author">
           <input type="number" id="pages" placeholder="Pages" min="0">
           <fieldset role="radiogroup">
-            <legend>Read book?</legend>
+            <legend>Book status</legend>
             <label for="yes">
               <input type="radio" id="yes" name="read" value="yes" checked>
-              <span>Yes</span>
+              <span>Read</span>
             </label>
             <label for="no">
               <input type="radio" id="no" name="read" value="no">
-              <span>No</span>
+              <span>Not read</span>
             </label>
           </fieldset>
           <div class="button-group">
             <button id="submit">Submit</button>
-            <button id="return">Return</button>
+            <button id="return">Back</button>
          </div>
         </div>
       </main>
     <script src = "test.js"></script> 
 </body>
+<footer class="footer">
+    Made by :  <a href="https://github.com/Raphael2215"><img id="ghlogo" src="./Images/gh-dark.png">Raphael2215</a>
+</footer>
 </html>

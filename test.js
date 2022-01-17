@@ -125,7 +125,7 @@ let myLibrary = [
   const createEditTd = (book, index) => {
     let $editTd = document.createElement('td');
     let $editButton = document.createElement('button');
-    $editButton.textContent = 'Edit';
+    $editButton.innerHTML = '<img src="Images/edit.png" height="25px" width="20px">';
     $editButton.addEventListener('click', () => {
       $titleInput.value = book.title;
       $authorInput.value = book.author
@@ -141,7 +141,7 @@ let myLibrary = [
   const createDeleteTd = (index) => {
     let $deleteTd = document.createElement('td');
     let $deleteButton = document.createElement('button');
-    $deleteButton.textContent = 'Delete';
+    $deleteButton.innerHTML = '<img src="Images/delete.png" height="25px" width="20px">';
     $deleteButton.addEventListener('click', () => {
       myLibrary.splice(index, 1);
       updateTable();
